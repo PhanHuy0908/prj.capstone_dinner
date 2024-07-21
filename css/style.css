@@ -1,1 +1,8 @@
-/* define common CSS for pages */
+* {
+    font-family: "Quicksand", sans-serif;
+}
+
+.container {
+    max-width: 1199px;
+    margin: 0 auto;
+}
