@@ -25,6 +25,9 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"/>
 
+        <!-- CSS gg -->
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/moon.css' rel='stylesheet'>
+
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 
@@ -35,8 +38,63 @@
     <body>
         <header>
             <!-- place navbar here -->
+            <nav class="navbar bg-transparent fixed-top">
+                <div class="container-fluid container">
+                  <div class="left_side">
+                    <a class="navbar-brand text-white fs-1 fw-bolder" href="#">Diner</a>
+                  </div>
+                  <div class="right_side">
+                    <form class="d-flex position-relative" role="search">
+                        <input class="form-control me-2 pt-2 pb-2 ps-3 pe-5" type="search" placeholder="Search here ..." aria-label="Search">
+                        <span class="fa fa-search search__icon icon_custom"></span>
+                    </form>
+                    <div class="night_mode">
+                        <i class="gg-moon text-white"></i>
+                    </div>
+                    <button id="trigger_overlay" class="overlay_button ps-3 pe-3" type="button">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                  </div>
+                </div>
+            </nav>
+
+            <!-- show overlay -->
+            <div id="overlay_menu" class="overlay_menu">
+                <div class="close_button_container">
+                    <button id="close_overlay" class="close_button">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+                <div class="menu_list">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="./about_page/index.html">About</a></li>
+                        <li><a href="./servce_page/index.html">Services</a></li>
+                        <li><a href="">Blog Posts</a></li>
+                        <li><a href="">404 page</a></li>
+                        <li><a href="">Elements</a></li>
+                        <li><a href="./contact_page/index.html">Contact</a></li>
+                        <li><a href="">Landing page</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
+
+        <!-- banner -->
+        <section class="banner banner_2">
+            <div class="container">
+                <div class="direction">
+                    <a href="../index.html" class="text-decoration-none fw-bold">Home</a>
+                    <i class="fa fa-chevron-right text-white"></i>
+                    <p class="mt-auto mb-auto text-white">Services page</p>
+                </div>
+            </div>
+        </section>
+
+
         <main></main>
+
+
         <footer>
             <!-- place footer here -->
         </footer>
@@ -52,5 +110,17 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+
+        <!-- Show/Hidden overlay -->
+        <script>
+            // JavaScript để hiện và ẩn overlay
+            document.getElementById('trigger_overlay').onclick = function() {
+              document.getElementById('overlay_menu').style.display = 'block';
+            }
+        
+            document.getElementById('close_overlay').onclick = function() {
+              document.getElementById('overlay_menu').style.display = 'none';
+            }
+        </script>
     </body>
 </html>

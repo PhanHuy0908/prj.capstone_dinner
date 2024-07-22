@@ -5,12 +5,21 @@
 .container {
     max-width: 1199px;
     margin: 0 auto;
+    font-size: 16px;
+}
+
+/* CSS for button */
+.button_default {
+    height: 60px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 header .container .right_side {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 header .navbar {
@@ -41,7 +50,7 @@ header .overlay_menu {
     width: 100%;
     height: 100%;
     background: rgb(6 3 0 / 77%);
-    /* display: none; */
+    display: none;
     z-index: 9999;
 }
 
@@ -93,9 +102,54 @@ header .close_button:focus:active {
     border-radius: 10px;
 }
 
+/* CSS for banner */
 .banner {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
+}
+
+.banner_2 {
+    background-position: top;
+    background-image: linear-gradient(to right, rgb(236 98 6 / 98%), rgb(5 3 0 / 83%)), url(../img/banner2.jpg);
+}
+
+.banner_text {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner_text h1 {
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.direction {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+
+.direction a {
+    color: #ff6600;
+    font-size: 18px;
+}
+
+.direction i {
+    font-size: 10px;
+}
+
+.direction p {
+    font-size: 18px;
+    font-weight: 700;
 }
