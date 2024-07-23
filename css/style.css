@@ -1,9 +1,15 @@
+/* define common CSS for pages */
+/* reset css  */
 * {
-    font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
 }
 
+/* ultilities class  */
 .container {
-    max-width: 1199px;
+    max-width: 1140px;
     margin: 0 auto;
     font-size: 16px;
 }
@@ -152,4 +158,136 @@ header .close_button:focus:active {
 .direction p {
     font-size: 18px;
     font-weight: 700;
+}
+
+/* FOOTER  */
+footer .footer_up_content h2 {
+  font-size: 30px;
+}
+footer .footer_up_content h3 {
+  font-size: 22px;
+}
+footer .footer_up_content p {
+  color: #a5a2a1 !important;
+  font-size: 17px;
+}
+
+footer .footer_up_content li {
+  list-style: none;
+  font-size: 17px;
+}
+footer .footer_up_item:nth-child(2) a {
+  color: #a5a2a1;
+}
+footer .footer_up_item:nth-child(3) a {
+  color: #a5a2a1;
+}
+footer .footer_up_item:first-child i {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: white;
+  color: #ff6602;
+}
+footer .footer_up_item:nth-child(4) input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 18px;
+  line-height: 28px;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+footer .footer_up_item:nth-child(4) button {
+  width: 100%;
+  padding: 15px 50px;
+  border-radius: 5px;
+  border: 1px solid #ff6602;
+  background-color: #ff6602;
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+footer .footer_up_item:nth-child(4) button:hover {
+  filter: brightness(0.7);
+}
+footer .footer_up_item:nth-child(4) input[type="email"]:focus {
+  border-color: #ff6602;
+}
+
+/* FOOTER DOWN  */
+footer .footer_down {
+  border-top: 1px solid rgb(255 255 255 / 5%) !important;
+}
+
+footer .footer_down p {
+  font-size: 17px;
+  color: #ddd;
+}
+footer .footer_down a {
+  color: #ff6602;
+}
+/* FOOTER_BACKTOTOP  */
+.back_to_top i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ff6602;
+  color: white;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  opacity: 0;
+}
+.cd-top--is-visible {
+  /* // back-to-top button visible */
+  visibility: visible;
+  opacity: 1;
+}
+/* .cd-top--fade-out {
+      // reduce button opacity if user keeps scrolling
+      opacity: 1;
+    } */
+
+/* REPONSIVE FOOTER  */
+@media screen and (max-width: 992px) {
+  footer .footer_up_social {
+    text-align: center;
+  }
+  footer .footer_down .copyright {
+    text-align: center;
+  }
+}
+
+/* PAGE: ABOUT - SECTION: STORY  */
+.story .story_middle img {
+  width: 100%;
+}
+.story .story_middle h2 {
+  padding: 30px;
+}
+/* REPONSIVE  */
+/* PAGE: ABOUT - SECTION: STORY */
+@media screen and (min-width: 0px) {
+  .story .story_bottom {
+    display: block;
+  }
+}
+@media screen and (min-width: 801px) {
+  .story .story_bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 993px) {
+  .story .story_bottom {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+  }
 }
