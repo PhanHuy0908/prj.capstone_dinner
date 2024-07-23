@@ -29,7 +29,10 @@ header .container .right_side {
 }
 
 header .navbar {
-    top: 30px
+  top: 30px;
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
 }
 
 header .icon_custom {
