@@ -1,0 +1,22 @@
+/* CSS for about us */
+.home_about_us .content_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 100px 0px;
+}
+
+.home_about_us .left_content {
+  flex: 3;
+}
+
+.home_about_us .left_content .title {
+  font-family: Pacifico;
+  color: #ff6600;
+}
+
+.home_about_us .right_content {
+  flex: 4;
+  color: #84868f;
+  font-size: 18px;
+}
