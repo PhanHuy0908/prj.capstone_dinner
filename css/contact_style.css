@@ -1,0 +1,26 @@
+/* RESPONSIVE (HTML) - THƯ */
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}

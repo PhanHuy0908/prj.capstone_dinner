@@ -1,0 +1,283 @@
+/* SECTION: ABOUT - THƯ */
+.story .container {
+  margin: 80px auto;
+}
+
+.story button {
+  border: none;
+  padding: 15px 50px;
+  background-color: #ff6602;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.story .story_md {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.story .story_md_img {
+  width: 50%;
+  padding: 40px 15px 40px 0;
+}
+.story .story_md_content {
+  width: 50%;
+}
+.story .story_md_img img {
+  width: 100%;
+  border-radius: 5px;
+}
+.story .story_md_content h2 {
+  margin-bottom: 30px;
+}
+.story .story_md_content p {
+  margin-bottom: 30px;
+}
+.story .story_md button {
+  transition: all 0.5s;
+}
+.story .story_md button:hover {
+  opacity: 0.8;
+}
+.story .story_bt {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.1fr;
+  gap: 30px;
+}
+.story .story_bt h2 {
+  line-height: 110px;
+}
+.story .story_bt h5 a {
+  text-decoration: none;
+  color: #ff6602;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.story .story_bt h5 a:hover {
+  color: #ffc600;
+}
+
+/* SECTION: SKILL  */
+.skill {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+}
+
+.skill .container {
+}
+.progress-container {
+  width: 100%;
+  height: 6px;
+  background-color: #595e6a;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.progress-bar {
+  width: 80%;
+  height: 100%;
+  background-color: #ff6602;
+  transition: width 0.4s ease;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+.progress_content_2 .progress-bar {
+  width: 95%;
+}
+
+.progress_content_3 .progress-bar {
+  width: 55%;
+}
+
+.skill .skill_content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 70px;
+}
+.skill .skill_left {
+  width: 40%;
+}
+.skill .skill_right {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.skill .skill_img_1 {
+  width: 50%;
+  height: 100%;
+}
+.skill .skill_img_2 {
+  width: 50%;
+  height: 100%;
+}
+.skill img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.skill h5 {
+  font-weight: bold;
+}
+
+/* SECTION: TEAM - THƯ  */
+.team {
+  padding: 80px 0;
+}
+.team .team_chef {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team .chef_item {
+  width: calc(100% / 3);
+}
+
+.team .chef_item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.team .chef_item_title a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  transition: all 0.5s;
+}
+.team .chef_item_title a:hover {
+  color: #ff6602;
+}
+.team .chef_item_img {
+  position: relative;
+}
+.team .chef_item_overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.team .chef_item_overlay ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 10px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.team .chef_item_img:hover ul {
+  opacity: 1;
+}
+.team .chef_item_overlay li {
+  list-style: none;
+}
+
+.team .chef_item_overlay a {
+  text-decoration: none;
+}
+.team .chef_item_overlay i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  background-color: rgba(157, 157, 157, 0.5);
+  transition: all 0.5s;
+}
+
+.team .chef_item_overlay i:hover {
+  background-color: white;
+  color: #ff6602;
+}
+
+/* RESPONSIVE: HTML LAYOUT - THƯ */
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+/* RESPONSIVE: ABOUT - THƯ  */
+@media screen and (max-width: 992px) {
+  .story .story_md {
+    display: flex;
+    flex-direction: column;
+  }
+  .story .story_md_img {
+    width: 100%;
+  }
+  .story .story_md_img img {
+    width: 100%;
+  }
+  .story .story_md_content {
+    width: 100%;
+  }
+  .story .story_bt {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .story .story_bt {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/* RESPONSIVE: SKILL - THƯ */
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .skill .skill_content {
+    display: block;
+  }
+  .skill .skill_left {
+    width: 100%;
+  }
+  .skill .skill_right {
+    width: 100%;
+  }
+}
+/* RESPONSIVE: TEAM - THƯ */
+@media screen and (max-width: 991px) {
+  .team .team_chef {
+    flex-wrap: wrap;
+  }
+  .team .chef_item {
+    width: 50%;
+  }
+}
