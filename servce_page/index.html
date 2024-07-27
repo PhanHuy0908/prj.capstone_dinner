@@ -46,14 +46,23 @@
           </div>
           <div class="right_side">
             <form class="d-flex position-relative" role="search">
-                <input class="form-control me-2 pt-2 pb-2 ps-3 pe-5" type="search" placeholder="Search here ..." aria-label="Search">
-                <span class="fa fa-search search__icon icon_custom"></span>
+              <input
+                class="form-control me-2 pt-2 pb-2 ps-3 pe-5"
+                type="search"
+                placeholder="Search here ..."
+                aria-label="Search"
+              />
+              <span class="fa fa-search search__icon icon_custom"></span>
             </form>
             <div class="night_mode">
-                <i class="gg-moon text-white"></i>
+              <i class="gg-moon text-white"></i>
             </div>
-            <button id="trigger_overlay" class="overlay_button ps-3 pe-3" type="button">
-                <i class="fa fa-bars"></i>
+            <button
+              id="trigger_overlay"
+              class="overlay_button ps-3 pe-3"
+              type="button"
+            >
+              <i class="fa fa-bars"></i>
             </button>
           </div>
         </div>
@@ -61,39 +70,36 @@
 
       <!-- show overlay -->
       <div id="overlay_menu" class="overlay_menu">
-          <div class="close_button_container">
-              <button id="close_overlay" class="close_button">
-                  <i class="fa fa-times"></i>
-              </button>
-          </div>
-          <div class="menu_list">
-              <ul>
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="../about_page/index.html">About</a></li>
-                  <li><a href="./index.html">Services</a></li>
-                  <li><a href="">Blog Posts</a></li>
-                  <li><a href="">404 page</a></li>
-                  <li><a href="">Elements</a></li>
-                  <li><a href="../contact_page/index.html">Contact</a></li>
-                  <li><a href="">Landing page</a></li>
-              </ul>
-          </div>
+        <div class="close_button_container">
+          <button id="close_overlay" class="close_button">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="menu_list">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about_page/index.html">About</a></li>
+            <li><a href="./index.html">Services</a></li>
+            <li><a href="">Blog Posts</a></li>
+            <li><a href="">404 page</a></li>
+            <li><a href="">Elements</a></li>
+            <li><a href="../contact_page/index.html">Contact</a></li>
+            <li><a href="">Landing page</a></li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <!-- banner -->
     <section class="banner banner_2">
-        <div class="container">
-            <div class="direction">
-                <a href="../index.html" class="text-decoration-none fw-bold">Home</a>
-                <i class="fa fa-chevron-right text-white"></i>
-                <p class="mt-auto mb-auto text-white">Services page</p>
-            </div>
+      <div class="container">
+        <div class="direction">
+          <a href="../index.html" class="text-decoration-none fw-bold">Home</a>
+          <i class="fa fa-chevron-right text-white"></i>
+          <p class="mt-auto mb-auto text-white">Services page</p>
         </div>
+      </div>
     </section>
-
-
-    <main></main>
 
     <!-- FOOTER (MS THƯ) -->
     <footer>
@@ -193,12 +199,12 @@
             </p>
           </div>
         </div>
-        <!-- back to top  -->
-        <a href="" class="back_to_top cd-top text-replace js-cd-top">
-          <i class="fa-solid fa-angle-up"></i>
-        </a>
       </section>
     </footer>
+    <!-- back to top  -->
+    <a href="" class="back_to_top cd-top text-replace js-cd-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -211,18 +217,19 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-
+    <!-- JS: BACK TO TOP  -->
+    <script src="./../js/back to top/assets/js/util.js"></script>
+    <script src="./../js/back to top/assets/js/main.js"></script>
     <!-- Show/Hidden overlay -->
     <script>
       // JavaScript để hiện và ẩn overlay
-      document.getElementById('trigger_overlay').onclick = function() {
-        document.getElementById('overlay_menu').style.display = 'block';
-      }
-  
-      document.getElementById('close_overlay').onclick = function() {
-        document.getElementById('overlay_menu').style.display = 'none';
-      }
+      document.getElementById("trigger_overlay").onclick = function () {
+        document.getElementById("overlay_menu").style.display = "block";
+      };
+
+      document.getElementById("close_overlay").onclick = function () {
+        document.getElementById("overlay_menu").style.display = "none";
+      };
     </script>
-    
   </body>
 </html>
