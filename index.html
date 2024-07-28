@@ -32,6 +32,9 @@
       rel="stylesheet"
     />
 
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="./css/magnific-popup/magnific-popup.css" />
+
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
@@ -54,29 +57,6 @@
   </head>
 
   <body>
-    <!-- <div class="mfp-bg my-mfp-zoom-in mfp-ready"></div>
-    <div
-      class="mfp-wrap mfp-close-btn-in mfp-auto-cursor my-mfp-zoom-in mfp-ready"
-      tabindex="-1"
-      style="top: 4052px; position: absolute; height: 1294px"
-    >
-      <div class="mfp-container mfp-inline-holder">
-        <div class="mfp-content">
-          <div id="small-dialog" class="zoom-anim-dialog">
-            <iframe
-              src="https://player.vimeo.com/video/305185528"
-              frameborder="0"
-              allow="autoplay; fullscreen"
-              allowfullscreen=""
-            ></iframe>
-            <button title="Close (Esc)" type="button" class="mfp-close">
-              ×
-            </button>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <header>
       <!-- place navbar here -->
       <div class="container">
@@ -452,14 +432,14 @@
               <i class="icon fa fa-play"></i>
             </a>
           </div>
-          <!-- <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+          <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
             <iframe
               src="https://player.vimeo.com/video/305185528"
               frameborder="0"
               allow="autoplay; fullscreen"
               allowfullscreen=""
             ></iframe>
-          </div> -->
+          </div>
         </div>
       </div>
     </section>
@@ -605,6 +585,33 @@
       };
     </script>
 
+    <script>
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          $("#site-header").addClass("nav-fixed");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+        }
+      });
+
+      //Main navigation Active Class Add Remove
+      $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+      });
+      $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
+        });
+      });
+    </script>
+
     <!-- count up lib -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -632,8 +639,20 @@
       });
     </script>
 
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="./js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="./js/magnific-popup/jquery.magnific-popup.js"></script>
+
+    <!-- Magnific initializing popup -->
+    <script>
+      $(document).ready(function () {
+        $(".image-link").magnificPopup({ type: "image" });
+      });
+    </script>
+
     <!-- animation for play button -->
-    <!-- <script src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/js/jquery.magnific-popup.min.js"></script>
     <script>
       $(document).ready(function () {
         $(".popup-with-zoom-anim").magnificPopup({
@@ -651,23 +670,7 @@
           removalDelay: 300,
           mainClass: "my-mfp-zoom-in",
         });
-
-        $(".popup-with-move-anim").magnificPopup({
-          type: "inline",
-
-          fixedContentPos: false,
-          fixedBgPos: true,
-
-          overflowY: "auto",
-
-          closeBtnInside: true,
-          preloader: false,
-
-          midClick: true,
-          removalDelay: 300,
-          mainClass: "my-mfp-slide-bottom",
-        });
       });
-    </script> -->
+    </script>
   </body>
 </html>
