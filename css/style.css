@@ -65,7 +65,7 @@ header .overlay_button {
 }
 
 /* Overlay css */
-header .overlay_menu {
+.overlay_menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -74,6 +74,16 @@ header .overlay_menu {
   background: rgb(6 3 0 / 77%);
   display: none;
   z-index: 9999;
+  opacity: 1;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.show {
+  display: block;
+  display: flex;
+  opacity: 1;
+  transform: scale(1);
 }
 
 header .menu_list {

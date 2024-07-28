@@ -32,6 +32,9 @@
       rel="stylesheet"
     />
 
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="./css/magnific-popup/magnific-popup.css" />
+
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
@@ -371,7 +374,77 @@
       </div>
     </section>
 
-    <!-- FOOTER (THƯ) -->
+    <!-- section statistic -->
+    <section class="statistic">
+      <div class="container_statistic">
+        <div class="container_title_information text">
+          <div class="text text-center">
+            <h2 class="text-white fw-bold mb-5 fs-1">
+              Deliciousness jumping into the mouth.
+            </h2>
+          </div>
+          <div class="button_container">
+            <button
+              class="read_more button_default me-2 fw-bold text-white bg-transparent"
+            >
+              Read more <i class="fa fa-chevron-right ms-2"></i>
+            </button>
+            <button class="contact_us button_default ms-2 fw-bold text-white">
+              Contact Us <i class="fa fa-chevron-right ms-2"></i>
+            </button>
+          </div>
+        </div>
+        <div class="container fugre_video">
+          <div class="container_figure">
+            <div class="row g-4">
+              <div class="col-3">
+                <div class="content bg-white text-center">
+                  <i class="icon fa fa-building"></i>
+                  <p class="fw-bold figure_count counter">15,100</p>
+                  <p class="fs-6 title">Branches</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="content bg-white text-center">
+                  <i class="icon fa fa-cutlery"></i>
+                  <p class="fw-bold figure_count counter">19,256</p>
+                  <p class="fs-6 title">Food Items</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="content bg-white text-center">
+                  <i class="icon fa fa-users"></i>
+                  <p class="fw-bold figure_count counter">12,100</p>
+                  <p class="fs-6 title">Chefs</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="content bg-white text-center">
+                  <i class="icon fa fa-smile"></i>
+                  <p class="fw-bold figure_count counter">2,560</p>
+                  <p class="fs-6 title">Happy Customers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container_video">
+            <a class="popup-with-zoom-anim" href="#small-dialog">
+              <i class="icon fa fa-play"></i>
+            </a>
+          </div>
+          <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+            <iframe
+              src="https://player.vimeo.com/video/305185528"
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER (MS THƯ) -->
     <footer>
       <!-- footer_up  -->
       <section class="footer_up bg-black">
@@ -500,16 +573,69 @@
     <!-- JS: BACK TO TOP  -->
     <script src="./js/back to top/assets/js/util.js"></script>
     <script src="./js/back to top/assets/js/main.js"></script>
-    <!-- Show/Hidden overlay -->
-    <script>
-      // JavaScript để hiện và ẩn overlay
-      document.getElementById("trigger_overlay").onclick = function () {
-        document.getElementById("overlay_menu").style.display = "block";
-      };
 
-      document.getElementById("close_overlay").onclick = function () {
-        document.getElementById("overlay_menu").style.display = "none";
-      };
+    <!-- Show/Hidden overlay -->
+    <script src="./js/show-overlay-menu/overlay_menu.js"></script>
+
+    <!-- count up lib -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+      integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/count-up/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp({
+        time: 2000,
+        delay: 10,
+      });
+    </script>
+
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="./js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="./js/magnific-popup/jquery.magnific-popup.js"></script>
+
+    <!-- Magnific initializing popup -->
+    <script>
+      $(document).ready(function () {
+        $(".image-link").magnificPopup({ type: "image" });
+      });
+    </script>
+
+    <!-- animation for play button -->
+    <script>
+      $(document).ready(function () {
+        $(".popup-with-zoom-anim").magnificPopup({
+          type: "inline",
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: "auto",
+
+          closeBtnInside: true,
+          preloader: false,
+
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
+        });
+      });
     </script>
   </body>
 </html>
