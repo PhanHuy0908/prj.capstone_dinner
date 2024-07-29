@@ -55,6 +55,7 @@
 .book_table .right_content .best_container {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   margin-top: 50px;
 }
 
@@ -484,6 +485,18 @@
 
   .banner .banner_text h1 {
     font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .home_about_us .content_container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .book_table .content_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
