@@ -55,6 +55,7 @@
 .book_table .right_content .best_container {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   margin-top: 50px;
 }
 
@@ -465,3 +466,75 @@
       0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
   }
 }
+
+/* responsive */
+
+@media screen and (max-width: 770px) {
+  .banner .banner_text {
+    width: 100%;
+  }
+  .banner .banner_text h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 800px) {
+  .banner .banner_text {
+    width: 90%;
+  }
+
+  .banner .banner_text h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .home_about_us .content_container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .book_table .content_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 995px) {
+  .banner .banner_text {
+    width: 80%;
+  }
+
+  .banner .banner_text h1 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (min-width: 995px) and (max-width: 1190px) {
+  .banner .banner_text {
+    width: 70%;
+  }
+
+  .banner .banner_text h1 {
+    font-size: 48px;
+  }
+}
+
+/* @media screen and (min-width: 576px) and (max-width: 992px) {
+  .cyber_carousel .carousel_text h2 {
+    color: orange;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cyber_carousel .carousel_text h2 {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .cyber_project .nav-item .active {
+    background-color: red;
+    border-color: red !important;
+  }
+} */
