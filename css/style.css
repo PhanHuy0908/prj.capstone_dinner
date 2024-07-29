@@ -50,7 +50,7 @@ header .container .right_side {
 
 header .navbar {
   top: 30px;
-  width: 1140px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -323,6 +323,11 @@ footer .footer_down a {
   /* // back-to-top button visible */
   visibility: visible;
   opacity: 1;
+}
+@media screen and (max-width: 600px) {
+  header .right_side form {
+    display: none !important;
+  }
 }
 
 /* FOOTER (REPONSIVE ) */
