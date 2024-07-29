@@ -360,6 +360,47 @@
   margin-bottom: 30px;
 }
 
+/* CSS for testimonials */
+.testimonials {
+  padding: 100px 0px;
+}
+
+.testimonials .item {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.testimonials .title {
+  color: #ff6600;
+  font-family: Pacifico;
+  font-size: 20px;
+}
+
+.testimonials .container_image {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials .testimonials_image {
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+}
+
+.testimonials .testimonials_icon {
+  color: #ff6600;
+  font-size: 25px;
+}
+
+.testimonials .slick-dots li button:before {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.testimonials .slick-dots .slick-active button::before {
+  color: #e62b4a;
+}
+
 @keyframes ripple {
   0% {
     box-shadow: 0 0 0 0 rgb(255 255 255 / 25%),
