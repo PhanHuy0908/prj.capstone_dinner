@@ -365,6 +365,11 @@
   padding: 100px 0px;
 }
 
+.testimonials .item {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .testimonials .title {
   color: #ff6600;
   font-family: Pacifico;
