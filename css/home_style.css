@@ -69,6 +69,11 @@
   border-radius: 10px;
 }
 
+.book_table .best_container i:hover {
+  transition: all 0.5s;
+  color: #ffc600 !important;
+}
+
 /* CSS for categories */
 .categories {
   background-color: #f7f7f7;
@@ -109,6 +114,11 @@
   );
 }
 
+.categories .item .overlay:hover {
+  transition: all 0.5s;
+  opacity: 0.85;
+}
+
 /* css for menu */
 .menu .container {
   padding: 80px 0;
@@ -138,6 +148,12 @@
   background-color: #f9f8fe;
 }
 
+.menu .content:hover i {
+  transition: all 0.5s;
+  background-color: #ff6600;
+  color: white;
+}
+
 /* css for information */
 
 .container_title_information::before {
@@ -163,7 +179,7 @@
   background-size: cover;
   background-position: center;
   padding: 100px 0px 150px 0px;
-  z-index: -1;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,7 +274,22 @@
   font-size: 25px;
   background-color: #f9f8fe;
   transition: 0.3s ease-in-out;
-  animation: ripple 1s linear infinite;
+  animation: play_button_effect 1s linear infinite;
+}
+
+.statistic .contact_us:hover {
+  transition: all 0.5s;
+  background-color: #ff6600 !important;
+  color: white !important;
+  opacity: 0.8;
+}
+
+.statistic .container_video .icon:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+  background: #ff6600;
+  border: transparent;
+  color: #fff;
 }
 
 #small-dialog {
@@ -346,13 +377,25 @@
 }
 
 .latest_posts .overlay_text {
+  transform: translateY(-10px);
   margin-left: 10px;
   color: #ff6600;
   display: block;
 }
 
+.latest_posts .overlay_text:hover {
+  transition: all 0.5s;
+  color: #5431ac;
+}
+
 .latest_posts .read_more {
-  color: #232121;
+  color: #232121 !important;
+  opacity: 0.9;
+}
+
+.latest_posts .read_more:hover {
+  transition: all 0.5s;
+  color: #ff6600 !important;
   opacity: 0.9;
 }
 
@@ -398,10 +441,20 @@
 }
 
 .testimonials .slick-dots .slick-active button::before {
-  color: #e62b4a;
+  opacity: 1;
+  color: #ff6600;
 }
 
-@keyframes ripple {
+/* .testimonials #slick-slide-control01::before {
+  color: gray;
+} */
+
+.testimonials .slick-dots li button:hover::before {
+  transition: all 0.5s;
+  color: #ff6600;
+}
+
+@keyframes play_button_effect {
   0% {
     box-shadow: 0 0 0 0 rgb(255 255 255 / 25%),
       0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
