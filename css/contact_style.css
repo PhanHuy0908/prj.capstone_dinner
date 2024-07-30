@@ -43,7 +43,7 @@
   border: 1px solid #ff6600;
   background-color: white;
 }
-.contact .form_1 textarea:focus {
+.contact textarea:focus {
   outline: none;
   border: 1px solid #ff6600;
   background-color: white;
@@ -58,6 +58,12 @@
   background-color: #ff6600;
   color: white;
   font-weight: bold;
+  opacity: 1;
+}
+
+.contact .send_button button:hover {
+  transition: all 0.5s;
+  opacity: 0.8;
 }
 
 /* INFO (THƯ)  */
@@ -100,6 +106,9 @@
   font-size: 18px;
   line-height: 28px;
   color: rgb(22 28 45 / 70%);
+}
+.info a:hover {
+  text-decoration: underline;
 }
 .info p {
   padding-right: 30px;
