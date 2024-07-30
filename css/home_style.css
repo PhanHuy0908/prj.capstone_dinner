@@ -382,6 +382,7 @@
   margin-left: 10px;
   color: #ff6600;
   display: block;
+  width: fit-content;
 }
 
 .latest_posts .overlay_text:hover {
