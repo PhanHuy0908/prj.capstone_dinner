@@ -1,0 +1,25 @@
+/* CSS for our menu */
+.our_menu {
+  padding: 80px 0px;
+}
+
+.our_menu .title {
+  color: #ff6600;
+  font-family: Pacifico;
+  font-size: 20px;
+}
+
+.our_menu .item .uper_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 2px dotted gray;
+  margin-bottom: 10px;
+}
+
+.our_menu .item .price {
+  color: #ff6600;
+  font-size: 20px;
+  font-weight: 600;
+}
