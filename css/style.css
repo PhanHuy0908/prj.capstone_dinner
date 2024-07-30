@@ -186,7 +186,6 @@ header .close_button:focus:active {
 
 .direction {
   display: flex;
-  gap: 10px;
   width: 100%;
   justify-content: center;
   align-items: center;
