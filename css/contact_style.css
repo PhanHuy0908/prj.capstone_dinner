@@ -1,3 +1,110 @@
+/* CONTACT  */
+.contact {
+  padding: 80px 0;
+}
+.contact h2 {
+  margin-bottom: 20px;
+}
+.contact .sub_title {
+  margin-bottom: 0;
+}
+.contact p {
+  margin-bottom: 40px;
+}
+.contact .form_1 {
+  display: flex;
+  gap: 10px;
+}
+.contact .form_1 input {
+  width: calc(100% / 3);
+  padding: 15px 20px;
+  background-color: #f7f7f7;
+  color: #6c757d;
+  border: 1px solid transparent;
+  font-size: 18px;
+  line-height: 28px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.contact textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 15px 20px;
+  background-color: #f7f7f7;
+  color: #6c757d;
+  font-size: 18px;
+  line-height: 28px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.contact .form_1 input:focus {
+  outline: none;
+  border: 1px solid #ff6600;
+  background-color: white;
+}
+.contact .form_1 textarea:focus {
+  outline: none;
+  border: 1px solid #ff6600;
+  background-color: white;
+}
+.contact .send_button {
+  text-align: end;
+}
+.contact .send_button button {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 15px 50px;
+  background-color: #ff6600;
+  color: white;
+  font-weight: bold;
+}
+
+/* INFO (THƯ)  */
+.info {
+  padding: 80px 0;
+  /* background-color: pink; */
+}
+.info .info_content {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 20px;
+}
+.info .info_right iframe {
+  width: 100%;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+.info h2 {
+  margin-bottom: 60px;
+}
+.info .info_left .info_item {
+  display: grid;
+  grid-template-columns: 20px auto;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.info .info_left .info_item:last-child {
+  margin-bottom: none;
+}
+.info i {
+  font-size: 20px;
+  color: #ff6600;
+}
+.info h5 {
+  font-weight: bold;
+}
+.info a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgb(22 28 45 / 70%);
+}
+.info p {
+  padding-right: 30px;
+}
+
 /* RESPONSIVE (HTML) - THƯ */
 
 @media screen and (min-width: 576px) {
@@ -22,5 +129,13 @@
   .container {
     max-width: 1140px;
     margin: 0 auto;
+  }
+}
+
+/* RESPONSIVE (INFO) - THƯ  */
+@media screen and (max-width: 992px) {
+  .info .info_content {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
